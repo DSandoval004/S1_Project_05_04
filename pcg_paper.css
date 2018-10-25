@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Diego Sandoval
+   Date:   10/25/18
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+/* Body and Window Style Rules */
+html {
+    background-color: white;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(213, 191, 154);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 16px;
+    width: 1152px;
+}
+
+/* Nav Bar */
+nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr)
+}
+
+nav div {
+    background-color: red;
+}
+
+nav div span {
+    display: block;
+    padding: 10px;
+}
+
+nav div a {
+    display: inline-block;
+    opacity: 0;
+    transition: .2s;
+    padding: 10px;
+}
+
+nav div:hover a {
+    opacity: 1;
+    display: block;
+    text-decoration: none;
+    background: royalblue;
+    color: white;
+}
+
+nav div div.fancyNavBar {
+    float: left;
+    clear: both;
+}
+
+/*  */
+
+/*  */
