@@ -27,41 +27,79 @@ body {
     width: 1152px;
 }
 
-/* Nav Bar */
-nav {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr)
-}
+/* Header Styles */
 
-nav div {
-    background-color: red;
-}
-
-nav div span {
-    display: block;
-    padding: 10px;
-}
-
-nav div a {
-    display: inline-block;
-    opacity: 0;
-    transition: .2s;
-    padding: 10px;
-}
-
-nav div:hover a {
-    opacity: 1;
-    display: block;
-    text-decoration: none;
-    background: royalblue;
-    color: white;
-}
-
-nav div div.fancyNavBar {
-    float: left;
+/* Grids */
+/* div.row {
     clear: both;
 }
 
-/*  */
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+} */
+
+/* Column */
+/* div[class^="col-"] {
+    float: left;
+}
+
+div.col-1-1 {
+    width: 100%;
+} */
+
+/* Nav Look */
+nav.topNavBar ul li {
+    background-color: rgb(96, 87, 70);
+    display: block;
+    font-size: 1em;
+    float: left;
+    line-height: 30px;
+    height: 2em;
+    width: 33.33%;
+}
+
+nav.topNavBar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav.topNavBar a:link,
+nav.topNavBar:visited {
+    color: rgb(216, 194, 157);
+}
+
+nav.topNavBar a:hover,
+nav.topNavBar:active {
+    background-color: rgb(62, 56, 45);
+}
+
+/* Nav Drop Down */
+.hide {
+    display: none;
+}
+
+a.dropDown:hover+div.hide#navItem1 {
+    display: block;
+}
+
+a.dropDown:hover+div.hide#navItem2 {
+    display: block;
+}
+
+a.dropDown:hover+div.hide#navItem3 {
+    display: block;
+}
+
+/* Nav Content Float */
+nav div#navFloat1 {
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+}
 
 /*  */

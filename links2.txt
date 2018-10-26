@@ -23,3 +23,50 @@ Camping
 
 Subscriptions
 Contact Us 
+
+
+
+/* header {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* Nav Bar */
+/* nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+} */
+header nav a {
+    display: block;
+    text-align: center;
+}
+
+nav div {
+    background-color: red;
+}
+
+nav div span {
+    display: block;
+    padding: 10px;
+}
+
+nav div a {
+    display: inline-block;
+    opacity: 0;
+    transition: .2s;
+    padding: 10px;
+}
+
+nav div:hover a {
+    opacity: 1;
+    display: block;
+    text-decoration: none;
+    background: royalblue;
+    color: white;
+}
+
+nav div div.fancyNavBar {
+    float: left;
+    clear: both;
+}
