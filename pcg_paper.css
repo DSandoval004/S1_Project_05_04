@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* Filled in information */
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 3
@@ -14,10 +15,12 @@
 
 */
 /* Body and Window Style Rules */
+/* Makes the background of the website white */
 html {
     background-color: white;
 }
 
+/* Aligns the body to the center of the page, Changes its background, unifies the font family, set the font size, sets the width and makes it have a min and max width. */
 body {
     margin-left: auto;
     margin-right: auto;
@@ -30,14 +33,15 @@ body {
 
 }
 
-/* Header Styles */
 /* Link styles */
+/* Makes all the links not have an underline, and set the text color. */
 a {
     text-decoration: none;
     color: rgb(228, 228, 228);
 }
 
 /* Top Nav Bar Styles */
+/* Displays the Nav Bar in a line, with even boxes and have a color and change when you hover over it */
 nav.navBar ul {
     list-style-type: none;
     margin: 0;
@@ -71,13 +75,14 @@ nav.navBar li.dd {
     display: inline-block;
 }
 
+/* Drops down and display extra content and when hovered over changes thee background color of the List Items. */
 nav.navBar .ddcon {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
-    width: 26.7%;
+    width: 22%;
 }
 
 nav.navBar .ddcon a {
@@ -97,6 +102,7 @@ nav.navBar .dd:hover .ddcon {
 }
 
 /* Aside Nav Box */
+/* Floats the aside Navigation list makes the list have the fancy hover, also it has a drop shadow. */
 aside {
     display: block;
     width: fit-content;
@@ -139,6 +145,7 @@ aside a:active {
 }
 
 /* H elements */
+/* Makes the Heading 1 element content appear large and bold. */
 h1 {
     display: block;
     font-size: 2em;
@@ -150,13 +157,15 @@ h1 {
 }
 
 /* Article styles */
+/* Display the articles as blocks, makes the margin auto so they are center in the body, an sets the padding. */
 article.story {
     display: block;
     margin-left: auto;
-    padding: 10px 10px 10px;
+    padding: 10px;
 }
 
 /* Footer */
+/* Sets the footer to display as block, makes it float left, changed the background color, set the width to 100%, and gave it some padding. Then prevented a container collapse, and then made it do the fancy hover, but just change the text color and not the background. */
 footer {
     display: block;
     float: left;
